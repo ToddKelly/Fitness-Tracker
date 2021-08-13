@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-const compression = require("compression");
+//const compression = require("compression");
 
 const PORT = process.env.PORT || 3000;
 
@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", {
   useCreateIndex: true,
   useFindAndModify: false,
 });
-app.use(compression());
+//app.use(compression());
 app.use(require("./routes/api.js"));
 app.use(require("./routes/view.js"));
 
