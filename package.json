@@ -8,6 +8,8 @@
     "start": "node seeders/seed.js && node server.js",
     "watch": "nodemon server.js",
     "seed": "node seeders/seed.js"
+//test
+
   },
   "author": "Todd Kelly",
   "license": "MIT",
