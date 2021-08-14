@@ -19,6 +19,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", {
   useFindAndModify: false,
 });
 //app.use(compression());
+//test
 app.use(require("./routes/api.js"));
 app.use(require("./routes/view.js"));
 
